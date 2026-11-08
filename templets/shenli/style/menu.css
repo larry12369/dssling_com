@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+/* 导航 */
+.nav { height:35px; padding-bottom:5px; margin:0 auto; width:1008px;}
+.ddsmoothmenu{ font-size:12px; font-family:Arial; /*background of menu bar (default state)*/ width:1000px; margin:0 auto;
+}
+
+.ddsmoothmenu ul{
+z-index:100;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+/*Top level list items*/
+.ddsmoothmenu ul li{
+
+position: relative;
+display: inline;
+float: left;
+text-align:center;
+}
+
+.menu { width:122px;}
+
+/*Top level menu link items style*/
+.ddsmoothmenu ul li a{ display: block; /*background of menu items (default state)*/ color: #333; font-family:"微软雅黑"; font-size:14px; text-decoration: none; height:29px; line-height:29px; padding-top:6px;
+}
+.ddsmoothmenu ul li ul { background:#fff;}
+.fms { background:url(../img/navline.gif) right no-repeat;}
+* html .ddsmoothmenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited{
+color: #333;font-family:"微软雅黑"; font-size:14px; 
+}
+
+.ddsmoothmenu ul li a.selected{ 
+background:url(../img/navbgon1.gif) bottom no-repeat;
+color: #FF3300!important;
+}
+.ddsmoothmenu ul li a:hover{
+background:url(../img/navbgon1.gif) bottom no-repeat;
+color: #575757;
+}
+
+
+.ddsmoothmenu ul li ul li a { background:#fff url(../img/subnvbg.gif) no-repeat; color:#5e6367;}
+.ddsmoothmenu ul li ul li a:link {color:#333;font-family:"微软雅黑"; font-size:12px; }
+.ddsmoothmenu ul li ul li a:visited {color:#333;}
+.ddsmoothmenu ul li ul li a.selected{ /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+background:#fff url(../img/subnvbgon.gif) left no-repeat;
+color: #ff9b09!important;
+}
+
+.ddsmoothmenu ul li ul li a:hover{
+background:#fff url(../img/subnvbgon.gif) left no-repeat; font-family:"微软雅黑"; font-size:12px;/*background of menu items during onmouseover (hover state)*/
+color: #FF6600;
+}
+	
+/*1st sub level menu*/
+.ddsmoothmenu ul li ul{
+position: absolute;
+width:142px;
+margin-left:8px;
+display: none; /*collapse all sub menus to begin with*/
+visibility: hidden;
+padding-bottom:18px;
+padding-top:12px;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.ddsmoothmenu ul li ul li{ text-align:left;
+display: list-item; padding:0px 13px 0px 12px;
+float: none; text-align:left; 
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul{ background:#d3d7da;
+top: 0; margin-left:-10px; margin-top:-1px;
+border:#ffffff 1px solid; border-left:none;
+}
+
+.ddsmoothmenu ul li ul li ul li { width:122px;}
+.ddsmoothmenu ul li ul li ul li a { width:122px; height:25px; line-height:25px; background:url(../img/thirdmenubg.gif) no-repeat;}
+.ddsmoothmenu ul li ul li ul li a:hover { background:url(../img/thirdmenubgon.gif) no-repeat;}
+
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a{
+width: 100px; /*width of sub menus*/
+height:25px; line-height:25px; font-family:"微软雅黑"; font-size:12px; border-bottom:#dbdbdb 1px solid; margin:0 auto; padding:0px 5px;
+}
+
+
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu{height: 1%;} /*Holly Hack for IE7 and below*/
+
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+position: absolute;
+top: -1000px;
+right: 7px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 8px;
+right: 15px;
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+.ddshadow{ /*shadow for NON CSS3 capable browsers*/
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 0;
+background:none;
+}
+
+.toplevelshadow{ /*shadow opacity for NON CSS3 capable browsers. Doesn't work in IE*/
+opacity: 0.0;
+}
+
+/* 导航结束 */

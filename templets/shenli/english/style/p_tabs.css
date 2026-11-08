@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+.nTab{ padding:10px;}
+
+/*选项卡样式*/
+.none { display:none;}
+
+.TabTitle{ clear:both; height:26px;}
+.TabTitle li{ float:left; display:inline; width:135px; height:36px; cursor:pointer; line-height:26px; text-align:center; font-size:12px; margin-right:1px; font-weight:bold;}
+.active{ background:url(images/honor_on.gif) no-repeat; color:#333;}
+.normal{ background:url(images/honor_off.gif) no-repeat; color:#666;}
+.TabContent{ background:#fff; padding:10px 0px; text-align:left; clear:both; min-height:260px; height:auto!important; height:260px; overflow:visible; line-height:22px;}
+
+.TabContent .jscs { width:90%; margin-left:10px;}
+
+.activeA{ background:url(images/honor_on.gif) no-repeat; color:#FFF;}
+.normalA{ background:url(images/honor_off.gif) no-repeat; color:#565656;}
+
+
+
+
+
+
+
+
